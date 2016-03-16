@@ -1,70 +1,85 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 * {
-/* With these codes padding and border does not increase it's width and gives intuitive style.*/
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body{
-	background-color: grey;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-}
-h2{
-  font-family: 'Roboto Slab', serif;
-}
-#loginForm{
-	position: relative;
-	color: #444;
-	min-width: 290px;
-	max-height: 684px;
-	background-color: lightblue;
-	box-shadow: 5px 10px 20px #666;
-  background-image: url("rsz_bulb2.jpg");
-  background-position: 20% 20%;
+body {
+    background-color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
-.form-content{
-	padding: 2em;
+h2 {
+    font-family: 'Roboto Slab', serif;
 }
 
-#loginForm .txtinput { 
-  display: block;
-  font-weight: 400;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dedede;
-  font-size: 1.55em;
-  padding: 11px 25px;
-  padding-left: 55px;
-  width: 90%;
-  color: #777;
-
-   
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; 
-   
-  transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
-  -webkit-transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
-  -moz-transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
-  -o-transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
+#loginForm {
+    text-align: center;
+    position: relative;
+    color: #444;
+    min-width: 290px;
+    max-height: 684px;
+    background-color: lightblue;
+    box-shadow: 5px 10px 20px #666;
+    background-image: url("rsz_bulb2.jpg");
+    background-position: 20% 20%;
 }
-#loginForm .txtinput:focus { 
-  color: #333;
-  border-color: rgba(41, 92, 161, 0.4);
-   
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
-  outline: 0 none; 
+
+.form-content {
+    padding: 2em;
+    text-align: center;
+}
+
+#loginForm .txtinput {
+    display: block;
+    font-weight: 400;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    font-size: 1.55em;
+    padding: 11px 25px;
+    padding-left: 55px;
+    width: 90%;
+    color: #777;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
+    -webkit-transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
+    -moz-transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
+    -o-transition: border 0.5s linear 0s, box-shadow 0.5s linear 0s, color 0.5s linear 0s;
+}
+
+#loginForm .txtinput:focus {
+    color: #333;
+    border-color: rgba(41, 92, 161, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+    outline: 0 none;
+}
+
+@media (min-width: 288px) {
+    #loginForm {
+      text-align: left;
+    }
+    .form-content{
+      text-align: left;
+    }
+}
+
+@media (min-width: 410px) {
+    .form-control{
+      max-width: 70%;
+    }
 }
 
 @media (min-width: 559px) {
-  #loginForm {
-    width: 529px;
-    margin: 5% auto;
-  }
+    #loginForm {
+        width: 529px;
+        margin: 5% auto;
+    }
 }
